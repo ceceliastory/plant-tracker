@@ -11,4 +11,8 @@ open class PlantService(private val plantRepository: PlantRepository) {
         plantRepository.save(plantEntity)
     }
 
+    open fun getAll(): List<Plant> {
+        return plantRepository.findAll().map { plant -> Plant(plant.name) }
+    }
+
 }

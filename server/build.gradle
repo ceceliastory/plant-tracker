@@ -37,7 +37,8 @@ dependencies {
     testCompile(
             "org.junit.jupiter:junit-jupiter-api:${junitJupiterVersion}",
             "com.nhaarman:mockito-kotlin:1.5.0",
-            "org.springframework.boot:spring-boot-starter-test"
+            "org.springframework.boot:spring-boot-starter-test",
+            "org.junit.platform:junit-platform-launcher:1.0.1"
     )
 
     testRuntime(

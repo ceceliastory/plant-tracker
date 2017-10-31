@@ -1,3 +1,3 @@
 package com.plant
 
-data class Plant(val name: String = "")
+data class Plant(var name: String = "")

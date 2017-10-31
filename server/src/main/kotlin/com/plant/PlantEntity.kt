@@ -1,15 +1,14 @@
 package com.plant
 
-import javax.persistence.Entity
-import javax.persistence.Id
-import javax.persistence.Table
+import javax.persistence.*
 
 @Entity
 @Table(name = "plant")
 data class PlantEntity(
 
-    @Id
-    var id: Int? = null,
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        var id: Int? = null,
 
-    val name: String
+        var name: String = ""
 )
