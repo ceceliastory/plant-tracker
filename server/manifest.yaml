@@ -1,0 +1,9 @@
+---
+applications:
+- name: plant-tracker-server
+  memory: 1024M
+  host: plant-tracker
+  buildpack: java_buildpack
+  path: build/libs/server-1.0-SNAPSHOT.jar
+  services:
+   - plant-tracker
