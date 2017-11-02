@@ -8,5 +8,3 @@ spring:
     platform: postgres
     url: jdbc:postgresql://localhost:5432/postgres
     driverClassName: org.postgresql.Driver
-    testOnBorrow: true
-    validationQuery: SELECT 1
