@@ -5,3 +5,4 @@
 /plant-tracker.iml
 /.gradle/
 /server/out/
+/server/src/main/resources/db/migration/postgres:/iebysyoe:3P5Yf6jyLUqpfHFLtt6Wazd-GMZi-bkh@elmer.db.elephantsql.com:5432/
