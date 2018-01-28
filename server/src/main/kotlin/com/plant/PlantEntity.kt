@@ -12,7 +12,9 @@ data class PlantEntity(
 
         var name: String,
 
+        @Column(name = "last_watered")
         var lastWatered: String,
 
+        @Column(name = "watering_interval_days")
         var wateringIntervalInDays: Int
 )
