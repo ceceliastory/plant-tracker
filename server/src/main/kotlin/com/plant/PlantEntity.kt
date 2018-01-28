@@ -10,5 +10,9 @@ data class PlantEntity(
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         var id: Int? = null,
 
-        var name: String = ""
+        var name: String,
+
+        var lastWatered: String,
+
+        var wateringIntervalInDays: Int
 )

@@ -46,7 +46,7 @@ class PlantControllerTest {
         @Test
         @DisplayName("is an HTTP endpoint which passes plant to service")
         fun addPlantHttp() {
-            val plant = Plant("cool plant")
+            val plant = Plant("cool plant", "2018-01-28", 10)
             val jsonRequest = ObjectMapper().writeValueAsString(plant)
 
             mockMvc.perform(post("/plant").content(jsonRequest).contentType(MediaType.APPLICATION_JSON))
